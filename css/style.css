@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation
+--------------------------------------------- */
+
+/*.navbar-default .navbar-brand {
+	font-family: 'Lobster', cursive, sans-serif;
+}*/
+
+.navbar-brand {
+	font-family: 'Dancing Script', cursive, sans-serif;
+	font-size: 52px;
+  margin-top: 10px;
+}
+
+
+
+/* Jumbotron
+--------------------------------------------- */
+
+.jumbotron {
+	background-image: url(../img/field2.png);
+	background-size: cover;
+}
+
+@media (min-width: 992px)
+.col-md-6 {
+    padding: 15px;
+}
+
+
+
+/* Featurettes 
+--------------------------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+	border-radius: 10px;
+}
+/* --------------------------------------------- */
+
+
+footer {
+	text-align: center;
+}
+
+
+/* Media Queary 
+--------------------------------------------- */
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 992px) { 
+.col-md-6 {
+    width: 50%;
+    padding: 15px;    }
+}
+
+/* --------------------------------------------- */
+
+
+
+
+
+
+
+}
+
