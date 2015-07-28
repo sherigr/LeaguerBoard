@@ -1,12 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster|Dancing+Script:700);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600);
+
 
 body {
   padding-top: 50px;
   padding-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 h1,
@@ -15,43 +17,147 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 500px;
+	font-weight: 400px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* Navigation
+/* NAVIGATION
 --------------------------------------------- */
 
-/*.navbar-default .navbar-brand {
-	font-family: 'Lobster', cursive, sans-serif;
-}*/
-
-.navbar-brand {
-	font-family: 'Dancing Script', cursive, sans-serif;
-	font-size: 52px;
-  margin-top: 10px;
+#header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+.navbar {
+  border-radius:0px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #2D3E30;
+  border-color: #2D3E30;
+}
+.navbar-default .navbar-brand {
+  margin-left: 30px;
+  margin-right:50px;
+  height: 48px;
+  font-size: 52px;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-weight: 900;
+  /*color: #CCFF00;*/
+  color: #E1DBD2;
+ }
+
+.navbar-default {
+  background-color: #2D3E30;
+  border-color: #2D3E30;
+}
+
+.navbar-default:hover .navbar-brand:hover {
+color: #8EB200;
+}
+
+.navbar-default .navbar-nav > li > a {
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 17px;
+ /* color: #CCFF00;*/
+  color: #E1DBD2;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 17px;
+  color: #8EB200;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 17px;
+  color: #BFBDBA;
+}
+
+.navbar-default .navbar-nav > li > a > i {
+  display: inline-block;
+}
+
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  /*color: #CCFF00;*/
+  color: #E1DBD2;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 20px;
+} 
+
+.navbar-default .navbar-text a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-text a:hover { 
+  color: #6C6865;
+}
+
+.flot-nav {
+    float:right;
+}
 
 
 /* Jumbotron
 --------------------------------------------- */
 
 .jumbotron {
-	background-image: url(../img/field2.png);
+  background-image: url(../img/field.jpg);
+  background-position: center bottom;
 	background-size: cover;
 }
+
+.jumbotron h1 {
+  /*font-family: 'Lobster', cursive;*/
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  text-shadow: 3px 3px #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+
+  }
+
+.jumbotron p {
+  color: #000000;
+  /*color: #FFFFFF;*/
+  /*text-shadow: 2px 2px #FFFFFF;*/
+  /*text-shadow: 4px 4px #000000;*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 
 @media (min-width: 992px)
 .col-md-6 {
     padding: 15px;
 }
 
+/* Container 
+--------------------------------------------*/
+/*.container {
+  padding-top: 20px;
+}*/
+
 
 
 /* Featurettes 
 --------------------------------------------- */
-
+hr .featurette-divider {
+  background-color: #666666;
+  color: #666666;
+}
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -77,6 +183,47 @@ footer {
 
 /* Media Queary 
 --------------------------------------------- */
+/*Toggle Navbar on iPad*/
+@media (min-width: 768px) and (max-width: 992px) { 
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display:block !important;
+  }
+}
+
+@media (min-width: 768px )
+
+
 @media (min-width: 768px) {
   .featurette-heading {
     font-size: 50px;
@@ -92,7 +239,7 @@ footer {
 @media (min-width: 992px) { 
 .col-md-6 {
     width: 50%;
-    padding: 15px;    }
+    padding: 30px;    }
 }
 
 /* --------------------------------------------- */
