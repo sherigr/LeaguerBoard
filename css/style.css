@@ -9,7 +9,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-  background-color: #F5F3EF;
+  /*background-color: #F5F3EF;*/
+  background-color: #FDFCFB;
 }
 
 h1,
@@ -152,8 +153,8 @@ color: #8EB200;
 }*/
 #seasons {
   /*background-color: #EFEBE5;*/
-  background-color: #FDFCFB;
-  margin-top: -30px;
+  /*background-color: #FDFCFB;*/
+  background-color: #F5F3EF;
 }
 
 .winner {
@@ -168,6 +169,7 @@ color: #8EB200;
 hr.featurette-divider {
   background-color: #666666;
   color: #666666;
+  z-index: 100;
 }
 
 .featurette-divider {
@@ -188,6 +190,11 @@ hr.featurette-divider {
 
 .col-md-7 .left {
   margin-right: 10px;
+}
+
+.row {
+    margin-right: -25px;
+    margin-left: 25px;
 }
 /* --------------------------------------------- */
 
@@ -245,11 +252,9 @@ footer#footer {
   }
 }
 
-@media (min-width: 768px ) {
-
-}
 
 
+/* Featurette */
 @media (min-width: 768px) {
   .featurette-heading {
     font-size: 50px;
