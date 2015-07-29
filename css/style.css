@@ -9,6 +9,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+  background-color: #F5F3EF;
 }
 
 h1,
@@ -144,20 +145,31 @@ color: #8EB200;
     padding: 15px;
 }
 
-/* Container 
+/* Seasons Container 
 --------------------------------------------*/
 /*.container {
   padding-top: 20px;
 }*/
+#seasons {
+  /*background-color: #EFEBE5;*/
+  background-color: #FDFCFB;
+  margin-top: -30px;
+}
 
+.winner {
+  color: #540f0f;
+  font-size: 20px;
+  font-weight: 700;
+}
 
 
 /* Featurettes 
 --------------------------------------------- */
-hr .featurette-divider {
+hr.featurette-divider {
   background-color: #666666;
   color: #666666;
 }
+
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -173,11 +185,23 @@ hr .featurette-divider {
 .img-responsive, .thumbnail a>img, .thumbnail>img {
 	border-radius: 10px;
 }
+
+.col-md-7 .left {
+  margin-right: 10px;
+}
 /* --------------------------------------------- */
 
 
 footer {
 	text-align: center;
+}
+
+footer#footer {
+/*  background-color: #2D3E30;
+  border-color: #2D3E30;*/
+  color: #2D3E30;
+  text-align: center;
+  padding: 20px;
 }
 
 
@@ -221,7 +245,9 @@ footer {
   }
 }
 
-@media (min-width: 768px )
+@media (min-width: 768px ) {
+
+}
 
 
 @media (min-width: 768px) {
