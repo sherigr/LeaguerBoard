@@ -6,11 +6,13 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  padding-bottom: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
   /*background-color: #F5F3EF;*/
   background-color: #FDFCFB;
+  overflow-x: hidden;
 }
 
 h1,
@@ -111,6 +113,10 @@ color: #8EB200;
     float:right;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #E1DBD2;
+}
+
 
 /* Jumbotron
 --------------------------------------------- */
@@ -119,6 +125,7 @@ color: #8EB200;
   background-image: url(../img/field.jpg);
   background-position: center bottom;
 	background-size: cover;
+  height: 400px;
 }
 
 .jumbotron h1 {
@@ -128,33 +135,25 @@ color: #8EB200;
   text-shadow: 3px 3px #FFFFFF;
   text-align: center;
   font-weight: 400;
-
   }
 
 .jumbotron p {
   color: #000000;
-  /*color: #FFFFFF;*/
-  /*text-shadow: 2px 2px #FFFFFF;*/
-  /*text-shadow: 4px 4px #000000;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
 
-@media (min-width: 992px)
-.col-md-6 {
-    padding: 15px;
-}
 
-/* Seasons Container 
+
+/* Season 
 --------------------------------------------*/
 /*.container {
   padding-top: 20px;
 }*/
 #seasons {
-  /*background-color: #EFEBE5;*/
   /*background-color: #FDFCFB;*/
-  background-color: #F5F3EF;
+  /*background-color: #F5F3EF;*/
 }
 
 .winner {
@@ -163,18 +162,32 @@ color: #8EB200;
   font-weight: 700;
 }
 
+#seasons .row {
+ /* background-color: #FDFCFB;*/
+}
+
 
 /* Featurettes 
 --------------------------------------------- */
-hr.featurette-divider {
-  background-color: #666666;
-  color: #666666;
-  z-index: 100;
+#featurette {
+  background-color: #F5F3EF;
 }
 
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+
+hr.featurette-divider {
+  border-top: 1px solid #E2E2E2 !important;
 }
+
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */  
+}
+
+#featurette .featurette-divider {
+  background-color: #767474;
+  color: #767474;
+}
+
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -188,32 +201,58 @@ hr.featurette-divider {
 	border-radius: 10px;
 }
 
+
 .col-md-7 .left {
   margin-right: 10px;
 }
 
 .row {
-    margin-right: -25px;
-    margin-left: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
-/* --------------------------------------------- */
 
 
+
+/* Footer
+--------------------------------------------- */
+/* Blockquote Footer *//
 footer {
 	text-align: center;
 }
 
-footer#footer {
-/*  background-color: #2D3E30;
-  border-color: #2D3E30;*/
-  color: #2D3E30;
+/* Page Footer */  
+/*footer#footer {
+  background-color: #2D3E30;
+  border-color: #2D3E30;
+  color: #E1DBD2;
   text-align: center;
   padding: 20px;
+}*/
+
+/* Page Footer */ 
+#footer {
+  padding: 20px;
+  background-color: #2D3E30;
+  font-family: 'Roboto', sans-serif;
+  color: #E1DBD2;
+  text-align: center;
+  margin-top: 0;
+  padding-right:50px;
 }
 
-
-/* Media Queary 
+/*-------------------------------
+Bottom Div to add space
 --------------------------------------------- */
+
+#bottom-page {
+  background-color: #F5F3EF;
+  height: 20px;
+}
+
+/*-------------------------------
+Media Queary 
+--------------------------------------------- */
+
 /*Toggle Navbar on iPad*/
 @media (min-width: 768px) and (max-width: 992px) { 
   .navbar-header {
@@ -252,9 +291,108 @@ footer#footer {
   }
 }
 
+@media (max-width: 610px) {
+  .navbar-default .navbar-brand {
+    margin-top: 10px;
+  }
+}
 
 
-/* Featurette */
+@media (max-width: 610px) {
+  p.navbar-text {
+    clear: both;
+    padding-top: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-default .navbar-brand {
+    font-size: 36px;
+    margin-left: 2px;
+  }
+}
+
+/*@media (max-width: 610px) {
+  button.navbar-toggle {
+    display: inline-block;
+  }
+}*/
+
+/* --- Jumbotron ----*/
+@media (max-width: 768px) {
+  .jumbotron {
+  background-image: url(../img/field.jpg);
+/*  opacity: 0.6;*/
+  height: 450px;
+  padding-top: 80px; 
+  padding-bottom: 80px; 
+  /*margin-bottom: 100px; */  
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .jumbotron p {
+    font-size: 20px;
+    font-weight: 600; 
+  }
+}
+
+@media (max-width: 479px) {
+  .jumbotron p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 666px) {
+  .jumbotron {
+  background-image: url(../img/field.jpg);
+  height: 520px;
+  padding-top: 90px; 
+  padding-bottom: 80px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron h1 {
+    padding-top: 30px;
+  }
+}
+
+
+
+/* Seasons 
+---------------------------*/
+
+@media (max-width: 768px) {
+  div #seasons .container {
+    margin-top: 35px !important;
+  }
+}
+@media (min-width: 992px) { 
+  .col-md-5 {
+    width: 41.66666667%;
+    margin-bottom: 25px;
+    }
+  }
+
+/*@media (min-width: 992px) { 
+  #seasons .col-md-5 {
+  height: 20px;
+  }
+}*/
+/* need to change margins for sm screen */
+
+
+/*@media (max-width: 992px) {
+  hr {
+    color:;
+  }
+}*/
+
+/* ----------------------------------
+Featurette */
 @media (min-width: 768px) {
   .featurette-heading {
     font-size: 50px;
@@ -272,6 +410,22 @@ footer#footer {
     width: 50%;
     padding: 30px;    }
 }
+
+@media (min-width: @screen-sm-min) {
+  /*#featurette {*/
+    #featurette .row .featurette {
+  background-color: #F5F3EF;
+  }
+}
+
+/* giving space btw button and col */
+@media (min-width: 320px) and (max-width: 730px) {
+  .col-md-5 {
+    padding-top: 10px;
+  }
+}
+
+
 
 /* --------------------------------------------- */
 
