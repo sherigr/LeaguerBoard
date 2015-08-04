@@ -135,7 +135,6 @@ color: #8EB200;
   text-shadow: 3px 3px #FFFFFF;
   text-align: center;
   font-weight: 400;
-
   }
 
 .jumbotron p {
@@ -208,8 +207,8 @@ hr.featurette-divider {
 }
 
 .row {
-    margin-right: 25px;
-    margin-left: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 
@@ -332,10 +331,17 @@ Media Queary
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
+  .jumbotron p {
+    font-size: 20px;
+    font-weight: 600; 
+  }
+}
+
+@media (max-width: 479px) {
   .jumbotron p {
     font-size: 16px;
-    font-weight: 600; 
+    font-weight: 600;
   }
 }
 
@@ -412,11 +418,14 @@ Featurette */
   }
 }
 
-/*@media (max-width: 992px) {
-  #featurette {
-  background-color: #F5F3EF;
+/* giving space btw button and col */
+@media (min-width: 320px) and (max-width: 730px) {
+  .col-md-5 {
+    padding-top: 10px;
+  }
 }
-}*/
+
+
 
 /* --------------------------------------------- */
 
