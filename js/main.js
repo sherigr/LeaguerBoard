@@ -11,7 +11,7 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 	this.k = k;
 	this.saves = saves;
 	this.wins = wins;
-	this.whip = whip
+	this.whip = whip;
 	this.pitching = function() {
 		return this.era + this.k + this.saves + this.wins + this.whip;
 	};
@@ -24,7 +24,9 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 };
 
 // Season 11 
-	
+	function season11() {
+
+	var season11 =[];
 	var someCrying = new Stats("Some Crying in Baseball", 9,12,8,11,6,12,9,5,12,11);	
 	var northside = new Stats("Northside", 12,11,12,12,11,7,3,11,2,3);
 	var hopeCliff = new Stats("I Hope Cliff Lee Gets TJS", 10,7,6,7,5,9,12,7.5,6,4);
@@ -37,4 +39,23 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 	var nysox = new Stats("New York Red Sox", 5,4,4,2,7,8,6,1,4,1);
 	var nuggets = new Stats("Nuggets", 7,2,2,3,3,4,4,2,3,9);
 	var pinstripes = new Stats("Pinstripes", 1,1,1,1,1,6,1,6,1,12);
+
+
+	season11.push(someCrying, northside, hopeCliff, syosset, pitbull, brianwilson, 
+		  wilpon, sawtooth, tsauv, nysox, nuggets, pinstripes);
+	// return season11;
+	for(var i = 0; i < season11.length; i++) {
+		console.log(season11[i].name +":" + season11[i].pitching() + season11[i].hitting() + season11[i].overallScore());
+
+
+	}
+
+};
+
+
+
+
+
+
+
 
