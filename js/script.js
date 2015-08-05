@@ -1,13 +1,18 @@
 $(function() {
 
-//Seasons/Winner event listener
-$('.winner').hide();
-  $('button').click(function() {
-  	// $(this).siblings('.winner').show();
-  	$(this).siblings('.winner').fadeIn(2000);
-  	$(this).remove();
-  });
+// When "View Winner" Button in Season clicked
+  // show winner and hide button
+	$('.winner').hide();
+	  $('button').click(function() {
+	  	$(this).siblings('.winner').fadeIn(2000);
+	  	$(this).remove();
+	  });
 
+
+// close modal
+	$('#modal14').on('hidden.bs.modal', function (e) {
+
+	});
 
 });
 
