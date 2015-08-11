@@ -47,7 +47,6 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 	for(var i = 0; i < season11.length; i++) {
 		console.log(season11[i].name +":" + season11[i].pitching() + season11[i].hitting() + season11[i].overallScore());
 
-
 	}
 
 };

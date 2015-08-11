@@ -124,11 +124,26 @@ color: #8EB200;
   Jumbotron
 --------------------------------------------- */
 
-.jumbotron {
+/*.jumbotron {
   background-image: url(../img/field.jpg);
   background-position: center bottom;
 	background-size: cover;
   height: 400px;
+
+}*/
+
+/* added gradient darker img easier to read text*/
+.jumbotron {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/field.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  height: 400px;
+  
 }
 
 .jumbotron h1 {
@@ -141,7 +156,7 @@ color: #8EB200;
   }
 
 .jumbotron p {
-  color: #000000;
+  color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -222,8 +237,17 @@ Modal
   padding-top: 70px;
 }
 
+.modal-title {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
 tr {
   padding: .25em;
+  text-align: center;
 }
 
 th, td {
@@ -341,7 +365,7 @@ Media Queary
 /* --- Jumbotron ----*/
 @media (max-width: 768px) {
   .jumbotron {
-  background-image: url(../img/field.jpg);
+/*  background-image: url(../img/field.jpg);*/
 /*  opacity: 0.6;*/
   height: 450px;
   padding-top: 80px; 
@@ -366,7 +390,7 @@ Media Queary
 
 @media (max-width: 666px) {
   .jumbotron {
-  background-image: url(../img/field.jpg);
+/*  background-image: url(../img/field.jpg);*/
   height: 520px;
   padding-top: 90px; 
   padding-bottom: 80px; 
