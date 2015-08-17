@@ -175,7 +175,7 @@ color: #8EB200;
 }
 
 .winner {
-  color: #540f0f;
+  color: #566459;
   font-size: 20px;
   font-weight: 700;
 }
@@ -468,6 +468,21 @@ Featurette */
   }
 }
 
+/* --------------------------------------------- 
+   modal table 
+--------------------------------------------*/
+
+@media (max-width: 520px) {
+  .modal-body {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal-body {
+    font-size: 8px;
+  }
+}
 
 
 /* --------------------------------------------- */
