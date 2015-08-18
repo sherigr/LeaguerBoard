@@ -290,6 +290,7 @@ Bottom Div to add space
 #bottom-page {
   background-color: #F5F3EF;
   height: 20px;
+  padding-top: 100px;
 }
 
 /*-------------------------------
