@@ -24,8 +24,9 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 };
 
 // Season 11 
-	function season11() {
+function season11() {
 
+	var teams =[];
 	var season11 =[];
 	var someCrying = new Stats("Some Crying in Baseball", 9,12,8,11,6,12,9,5,12,11);	
 	var northside = new Stats("Northside", 12,11,12,12,11,7,3,11,2,3);
@@ -41,16 +42,31 @@ function Stats(name, batting, hr, runs, rbi, sb, era, k, saves, wins, whip) {
 	var pinstripes = new Stats("Pinstripes", 1,1,1,1,1,6,1,6,1,12);
 
 
-	season11.push(someCrying, northside, hopeCliff, syosset, pitbull, brianwilson, 
-		  wilpon, sawtooth, tsauv, nysox, nuggets, pinstripes);
-	// return season11;
-	for(var i = 0; i < season11.length; i++) {
+	// season11.push(someCrying, northside, hopeCliff, syosset, pitbull, brianwilson, 
+	// 	  wilpon, sawtooth, tsauv, nysox, nuggets, pinstripes);
+	teams.push(someCrying, northside, hopeCliff, syosset, pitbull, brianwilson, 
+			  wilpon, sawtooth, tsauv, nysox, nuggets, pinstripes);
+	
+	for(var i = 0; i < teams.length; i++) {
 		console.log(season11[i].name +":" + season11[i].pitching() + season11[i].hitting() + season11[i].overallScore());
 
-	}
-
+		// 	var table = $('<table></table>').addClass('scores-table');
+		// 	var row = $('<tr></tr>').addClass('scores-table');
+		// 	var name = $('<td></td>').html(teams[i].name).addClass('team-name');
+		// 	var batting = $('<td></td>').html(teams[i].hitting()).addClass('hitting');
+		// 	var pitching = $('<td</td>>').html(teams[i].pitching()).addClass('pitching');
+		// 	var total = $('<td></td>').html(teams[i].overallScore()).addClass('total-score');
+		// 	table.append(row);
+		// 	table.append(name);
+		// 	table.append(batting);
+		// 	table.append(pitching);
+		// 	table.append(total);
+		// } 
+		
+		// $('#modal11').append(table);
+	};
 };
-
+// season11();
 
 
 

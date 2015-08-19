@@ -120,6 +120,12 @@ color: #8EB200;
 }
 
 
+/* Baseball */
+#baseball { 
+  position: absolute; 
+  left: -1000px 
+}
+
 /*-------------------------------
   Jumbotron
 --------------------------------------------- */
@@ -239,6 +245,10 @@ Modal
 
 .modal-title {
   text-align: center;
+}
+
+table {
+  width: 100%;
 }
 
 th {

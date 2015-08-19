@@ -57,7 +57,12 @@
         </div>
       </div> <!-- div id navbar -->
     </header>
-
+    <!-- animated baseball on page load -->
+    <div>
+      <img id="baseball" src="img/baseball.png">
+    </div>
+    <!-- end animated baseball -->
+      <!-- Adding Modal on top to avoid conflicts -->
       <div class="modal fade" id="modal14">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -184,7 +189,7 @@
             </div> <!-- End modal-header -->
             <div class="modal-body">
               <!-- Modal - 2013 Scores Table -->
-              <table class="table-hover">
+              <table class="table-hover table-responsive">
                 <tr>
                   <th id="rank" scope="col">Rank</th>
                   <th id="team"scope="col">Team</th>
@@ -310,7 +315,7 @@
             </div> <!-- End modal-header -->
             <div class="modal-body">
               <!-- Modal - 2012 Scores Table -->
-              <table class="table-hover">
+              <table class="table-hover table-responsive">
                 <tr>
                   <th id="rank" scope="col">Rank</th>
                   <th id="team"scope="col">Team</th>
@@ -435,7 +440,7 @@
             </div> <!-- End modal-header -->
             <div class="modal-body">
               <!-- 2011 Modal Scores Table -->
-              <table class="table-hover">
+              <table class="table-hover table-responsive">
                 <tr>
                   <th id="rank" scope="col">Rank</th>
                   <th id="team"scope="col">Team</th>
@@ -616,7 +621,7 @@
               <footer>TSauvs Manager</footer>
           </blockquote>
           <!-- button -->
-          <button type="button" class="btn btn-default scores-btn14">2014 Scores</button> <!-- end modal button -->         
+          <button type="button" data-year="14" class="btn btn-default scores-btn14 scores-btn">2014 Scores</button> <!-- end modal button -->         
           <!-- Modal14-->        
         </div> <!-- End col-md-7 left -->
         <div class="col-md-5">
@@ -635,7 +640,7 @@
               <footer>Yawkey Way Manager</footer>
             </blockquote>        
           <!-- Modal Button, Trigger Modal -->
-          <button type="button" class="btn btn-default scores-btn13">2013 Scores</button>
+          <button type="button" data-year="13" class="btn btn-default scores-btn13 scores-btn">2013 Scores</button>
           <!-- end modal button -->         
         </div> <!-- col-md-7 -->
         <div class="col-md-5 col-md-pull-7">          
@@ -655,7 +660,7 @@
             <footer>Rusty Manager</footer>
           </blockquote>
           <!-- Modal Button -->
-          <button type="button" class="btn btn-default scores-btn12">2012 Scores</button>
+          <button type="button" data-year="12" class="btn btn-default scores-btn12 scores-btn">2012 Scores</button>
           <!-- end modal button -->                  
         </div> <!-- col-md-7 -->
         <div class="col-md-5">
@@ -674,7 +679,7 @@
             <footer>Pinstripes Manager</footer>
           </blockquote>
           <!-- Modal button -->
-          <button type="button" class="btn btn-default scores-btn11">2011 Scores</button>
+          <button type="button" data-year="12" class="btn btn-default scores-btn11 scores-btn">2011 Scores</button>
           <!-- end modal button -->             
         </div> <!-- col-md-7 -->
         <div class="col-md-5 col-md-pull-7">          
