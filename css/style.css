@@ -7,9 +7,9 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   padding-bottom: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   /*background-color: #F5F3EF;*/
   background-color: #FDFCFB;
   overflow-x: hidden;
@@ -21,8 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 400px;
-	font-family: 'Open Sans', sans-serif;
+  font-weight: 400px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -120,7 +120,7 @@ color: #8EB200;
 }
 
 
-/* Baseball */
+/* Baseball image on window load */
 #baseball { 
   position: absolute; 
   left: -1000px 
@@ -130,15 +130,6 @@ color: #8EB200;
   Jumbotron
 --------------------------------------------- */
 
-/*.jumbotron {
-  background-image: url(../img/field.jpg);
-  background-position: center bottom;
-	background-size: cover;
-  height: 400px;
-
-}*/
-
-/* added gradient darker img easier to read text*/
 .jumbotron {
   background-image: 
     linear-gradient(
@@ -153,7 +144,6 @@ color: #8EB200;
 }
 
 .jumbotron h1 {
-  /*font-family: 'Lobster', cursive;*/
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   text-shadow: 3px 3px #FFFFFF;
@@ -167,32 +157,17 @@ color: #8EB200;
   font-weight: 400;
 }
 
-
-
 /*-------------------------------
-  Season
+  Seasons Section
 --------------------------------------------- */
-/*.container {
-  padding-top: 20px;
-}*/
-#seasons {
-  /*background-color: #FDFCFB;*/
-  /*background-color: #F5F3EF;*/
-}
-
 .winner {
   color: #566459;
   font-size: 20px;
   font-weight: 700;
 }
 
-#seasons .row {
- /* background-color: #FDFCFB;*/
-}
-
-
 /*-------------------------------
-Featurettes
+Featurettes - Year Scores
 --------------------------------------------- */
 #featurette {
   background-color: #F5F3EF;
@@ -213,7 +188,6 @@ hr.featurette-divider {
   color: #767474;
 }
 
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -221,11 +195,11 @@ hr.featurette-divider {
   letter-spacing: -1px;
 }
 
+/* try to reword so fits w/featurette, no carousel */
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, 
 .img-responsive, .thumbnail a>img, .thumbnail>img {
-	border-radius: 10px;
+  border-radius: 10px;
 }
-
 
 .col-md-7 .left {
   margin-right: 10px;
@@ -234,6 +208,24 @@ hr.featurette-divider {
 .row {
   margin-right: 25px;
   margin-left: 25px;
+}
+/* fix space clicking from nav link to year*/
+#featurette14 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+
+#featurette13 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+#featurette12 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+#featurette11 {
+  margin-top: -125px; 
+  padding-top: 125px; 
 }
 
 /*-------------------------------
@@ -268,21 +260,12 @@ th, td {
 /*-------------------------------
 Footer
 --------------------------------------------- */
-/* Blockquote Footer *//
+/* BLOCKQUOTE Footer *//
 footer {
-	text-align: center;
+  text-align: center;
 }
 
-/* Page Footer */  
-/*footer#footer {
-  background-color: #2D3E30;
-  border-color: #2D3E30;
-  color: #E1DBD2;
-  text-align: center;
-  padding: 20px;
-}*/
-
-/* Page Footer */ 
+/* PAGE Footer */ 
 #footer {
   padding: 20px;
   background-color: #2D3E30;
@@ -367,13 +350,13 @@ Media Queary
   }
 }
 
-/*@media (max-width: 610px) {
-  button.navbar-toggle {
-    display: inline-block;
-  }
-}*/
-
 /* --- Jumbotron ----*/
+@media (min-width: 800px) and (max-width: 960px) {
+  .jumbotron {
+    height: 450px;
+  }
+}
+
 @media (max-width: 768px) {
   .jumbotron {
 /*  background-image: url(../img/field.jpg);*/
@@ -392,16 +375,8 @@ Media Queary
   }
 }
 
-@media (max-width: 479px) {
-  .jumbotron p {
-    font-size: 16px;
-    font-weight: 600;
-  }
-}
-
 @media (max-width: 666px) {
   .jumbotron {
-/*  background-image: url(../img/field.jpg);*/
   height: 520px;
   padding-top: 90px; 
   padding-bottom: 80px; 
@@ -414,10 +389,20 @@ Media Queary
   }
 }
 
-
+@media (max-width: 479px) {
+  .jumbotron p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
 
 /* Seasons 
 ---------------------------*/
+@media (min-width: 1024px) {
+  p {
+    padding-bottom: 10px;
+  }
+}
 
 @media (max-width: 768px) {
   div #seasons .container {
@@ -431,28 +416,26 @@ Media Queary
     }
   }
 
-/*@media (min-width: 992px) { 
-  #seasons .col-md-5 {
-  height: 20px;
+/* need to center on tablets */
+  @media (min-width: 768px) and (max-width: 990px) {
+    #seasons .col-md-5 {
+      text-align: center;
+    }
   }
-}*/
-/* need to change margins for sm screen */
-
-
-/*@media (max-width: 992px) {
-  hr {
-    color:;
+  @media (min-width: 768px) and (max-width: 990px) {
+    #seasons .season-img { 
+    display: inline;
+    }
   }
-}*/
+
+  @media (min-width: 320px) and (max-width: 950px) {
+    #seasons p {
+      padding-bottom: 10px;
+    }
+  }
 
 /* ----------------------------------
 Featurette */
-@media (min-width: 768px) {
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
@@ -462,13 +445,13 @@ Featurette */
 @media (min-width: 992px) { 
 .col-md-6 {
     width: 50%;
-    padding: 30px;    }
+    padding: 30px;    
+  }
 }
 
-@media (min-width: @screen-sm-min) {
-  /*#featurette {*/
-    #featurette .row .featurette {
-  background-color: #F5F3EF;
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
   }
 }
 
@@ -478,10 +461,26 @@ Featurette */
     padding-top: 10px;
   }
 }
+@media (min-width: 320px) and (max-width: 415px) {
+  .featurette-image {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+    #featurette .row .featurette {
+  background-color: #F5F3EF;
+  }
+}
 
 /* --------------------------------------------- 
    modal table 
 --------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .modal-dialog {
+    padding-top: 120px;
+  }
+}
 
 @media (max-width: 520px) {
   .modal-body {
@@ -499,10 +498,4 @@ Featurette */
 /* --------------------------------------------- */
 
 
-
-
-
-
-
-}
 
