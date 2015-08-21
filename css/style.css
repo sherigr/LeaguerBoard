@@ -10,7 +10,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  /*background-color: #F5F3EF;*/
   background-color: #FDFCFB;
   overflow-x: hidden;
 }
@@ -53,7 +52,6 @@ h6 {
   font-size: 52px;
   font-family: 'Dancing Script', cursive, sans-serif;
   font-weight: 900;
-  /*color: #CCFF00;*/
   color: #E1DBD2;
  }
 
@@ -70,7 +68,6 @@ color: #8EB200;
   padding: 20px 10px;
   font-size: 16px;
   line-height: 17px;
- /* color: #CCFF00;*/
   color: #E1DBD2;
 }
 
@@ -96,7 +93,6 @@ color: #8EB200;
   color: #FFFFFF;
 }
 .navbar-default .navbar-text {
-  /*color: #CCFF00;*/
   color: #E1DBD2;
   font-family: 'Dancing Script', cursive, sans-serif;
   font-size: 20px;
@@ -119,11 +115,13 @@ color: #8EB200;
     border-color: #E1DBD2;
 }
 
-
-/* Baseball image on window load */
+/*-------------------------------
+  Baseball image on window load
+--------------------------------------------- */
 #baseball { 
   position: absolute; 
-  left: -1000px 
+  top: 50%;
+  z-index: 1000;
 }
 
 /*-------------------------------
@@ -173,11 +171,9 @@ Featurettes - Year Scores
   background-color: #F5F3EF;
 }
 
-
 hr.featurette-divider {
   border-top: 1px solid #E2E2E2 !important;
 }
-
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */  
@@ -256,7 +252,6 @@ th, td {
   padding: .33em;
 }
 
-
 /*-------------------------------
 Footer
 --------------------------------------------- */
@@ -334,7 +329,6 @@ Media Queary
   }
 }
 
-
 @media (max-width: 610px) {
   p.navbar-text {
     clear: both;
@@ -359,12 +353,9 @@ Media Queary
 
 @media (max-width: 768px) {
   .jumbotron {
-/*  background-image: url(../img/field.jpg);*/
-/*  opacity: 0.6;*/
   height: 450px;
   padding-top: 80px; 
-  padding-bottom: 80px; 
-  /*margin-bottom: 100px; */  
+  padding-bottom: 80px;  
   }
 }
 
@@ -378,7 +369,7 @@ Media Queary
 @media (max-width: 666px) {
   .jumbotron {
   height: 520px;
-  padding-top: 90px; 
+  padding-top: 60px;
   padding-bottom: 80px; 
   }
 }
@@ -416,7 +407,7 @@ Media Queary
     }
   }
 
-/* need to center on tablets */
+/* center on tablets */
   @media (min-width: 768px) and (max-width: 990px) {
     #seasons .col-md-5 {
       text-align: center;
@@ -494,6 +485,15 @@ Featurette */
   }
 }
 
+/* --------------------------------------------- 
+  No baseball animate on mobile
+--------------------------------------------- */
+
+@media (max-width: 900px) {
+  #baseball {
+    display: none;
+  }
+}
 
 /* --------------------------------------------- */
 
