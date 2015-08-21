@@ -452,7 +452,7 @@ Featurette */
     padding-top: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 415px) {
+@media (min-width: 320px) and (max-width: 603px) {
   .featurette-image {
     padding-top: 20px;
   }
