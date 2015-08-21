@@ -489,7 +489,7 @@ Featurette */
   No baseball animate on mobile
 --------------------------------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   #baseball {
     display: none;
   }
