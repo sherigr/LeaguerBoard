@@ -1,7 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster|Dancing+Script:700);
+
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600);
-@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
 @import url(http://fonts.googleapis.com/css?family=Quantico:400,700italic,400italic,700);
 
 
@@ -343,8 +341,14 @@ Media Queary
 
 @media (max-width: 480px) {
   .navbar-default .navbar-brand {
-    font-size: 36px;
+    font-size: 26px; /*changed w/font change*/
     margin-left: 2px;
+  }
+}
+
+/* toggle button on same line as brand*/
+.navbar-toggle {
+    position: absolute;
   }
 }
 
