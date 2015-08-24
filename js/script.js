@@ -8,8 +8,7 @@ $(".navbar-nav li a").click(function(event) {
 // Animate baseball on page load
 $('#baseball').animate({
     marginLeft: $(document).width()
-  }, 2500, 'easeInOutElastic', function() {
-    // Animation complete.
+  }, 3000, 'easeInOutElastic', function() {
     $('#baseball').fadeOut(1000);
   });
 

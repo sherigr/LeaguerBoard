@@ -329,15 +329,15 @@ Media Queary
   .navbar-default .navbar-brand {
     margin-top: 10px;
   }
-}
-
-@media (max-width: 610px) {
   p.navbar-text {
     clear: both;
     padding-top: 25px;
     margin-left: 10px;
   }
 }
+
+
+
 
 @media (max-width: 480px) {
   .navbar-default .navbar-brand {
