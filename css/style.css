@@ -336,9 +336,6 @@ Media Queary
   }
 }
 
-
-
-
 @media (max-width: 480px) {
   .navbar-default .navbar-brand {
     font-size: 26px; /*changed w/font change*/
