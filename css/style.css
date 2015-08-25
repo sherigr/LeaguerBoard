@@ -1,6 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(http://fonts.googleapis.com/css?family=Quantico:400,700italic,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Quantico:400,400italic,700,700italic);
 
 
 body {
@@ -94,11 +93,6 @@ color: #8EB200;
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #FFFFFF;
 }
-.navbar-default .navbar-text {
-  color: #E1DBD2;
-  font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 20px;
-} 
 
 .navbar-default .navbar-text a {
   color: #FFFFFF;
