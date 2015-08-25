@@ -49,10 +49,9 @@ h6 {
   margin-right:50px;
   height: 48px;
   font-size: 52px;
-/*  font-family: 'Dancing Script', cursive, sans-serif;*/
   font-family: 'Quantico', sans-serif;
   font-weight: 700;
-  font-style: italic; /*added for Quantico */
+  font-style: italic; 
   color: #E1DBD2;
  }
 
