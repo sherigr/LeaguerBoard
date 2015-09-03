@@ -125,6 +125,8 @@ color: #8EB200;
 
 .jumbotron {
   background-image: 
+    -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/field.jpg);
+  background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.4), 
       rgba(0, 0, 0, 0.4)
@@ -132,8 +134,7 @@ color: #8EB200;
     url(../img/field.jpg);
   background-position: center bottom;
   background-size: cover;
-  height: 400px;
-  
+  height: 400px;  
 }
 
 .jumbotron h1 {
