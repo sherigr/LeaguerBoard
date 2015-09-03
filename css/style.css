@@ -1,16 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster|Dancing+Script:700);
-@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600);
+
+@import url(https://fonts.googleapis.com/css?family=Quantico:400,400italic,700,700italic);
 
 
 body {
   padding-top: 50px;
   padding-bottom: 20px;
   padding-bottom: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-  /*background-color: #F5F3EF;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   background-color: #FDFCFB;
   overflow-x: hidden;
 }
@@ -21,8 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 400px;
-	font-family: 'Open Sans', sans-serif;
+  font-weight: 400px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -51,9 +49,9 @@ h6 {
   margin-right:50px;
   height: 48px;
   font-size: 52px;
-  font-family: 'Dancing Script', cursive, sans-serif;
-  font-weight: 900;
-  /*color: #CCFF00;*/
+  font-family: 'Quantico', sans-serif;
+  font-weight: 700;
+  font-style: italic; 
   color: #E1DBD2;
  }
 
@@ -70,7 +68,6 @@ color: #8EB200;
   padding: 20px 10px;
   font-size: 16px;
   line-height: 17px;
- /* color: #CCFF00;*/
   color: #E1DBD2;
 }
 
@@ -95,12 +92,6 @@ color: #8EB200;
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #FFFFFF;
 }
-.navbar-default .navbar-text {
-  /*color: #CCFF00;*/
-  color: #E1DBD2;
-  font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 20px;
-} 
 
 .navbar-default .navbar-text a {
   color: #FFFFFF;
@@ -119,20 +110,34 @@ color: #8EB200;
     border-color: #E1DBD2;
 }
 
+/*-------------------------------
+  Baseball image on window load
+--------------------------------------------- */
+#baseball { 
+  position: absolute; 
+  top: 50%;
+  z-index: 1000;
+}
 
 /*-------------------------------
   Jumbotron
 --------------------------------------------- */
 
 .jumbotron {
-  background-image: url(../img/field.jpg);
+  background-image: 
+    -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/field.jpg);
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/field.jpg);
   background-position: center bottom;
-	background-size: cover;
-  height: 400px;
+  background-size: cover;
+  height: 400px;  
 }
 
 .jumbotron h1 {
-  /*font-family: 'Lobster', cursive;*/
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   text-shadow: 3px 3px #FFFFFF;
@@ -141,47 +146,30 @@ color: #8EB200;
   }
 
 .jumbotron p {
-  color: #000000;
+  color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
-
-
 /*-------------------------------
-  Season
+  Seasons Section
 --------------------------------------------- */
-/*.container {
-  padding-top: 20px;
-}*/
-#seasons {
-  /*background-color: #FDFCFB;*/
-  /*background-color: #F5F3EF;*/
-}
-
 .winner {
-  color: #540f0f;
+  color: #566459;
   font-size: 20px;
   font-weight: 700;
 }
 
-#seasons .row {
- /* background-color: #FDFCFB;*/
-}
-
-
 /*-------------------------------
-Featurettes
+Featurettes - Year Scores
 --------------------------------------------- */
 #featurette {
   background-color: #F5F3EF;
 }
 
-
 hr.featurette-divider {
   border-top: 1px solid #E2E2E2 !important;
 }
-
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */  
@@ -192,7 +180,6 @@ hr.featurette-divider {
   color: #767474;
 }
 
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -200,11 +187,11 @@ hr.featurette-divider {
   letter-spacing: -1px;
 }
 
+/* try to reword so fits w/featurette, no carousel */
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, 
 .img-responsive, .thumbnail a>img, .thumbnail>img {
-	border-radius: 10px;
+  border-radius: 10px;
 }
-
 
 .col-md-7 .left {
   margin-right: 10px;
@@ -214,6 +201,24 @@ hr.featurette-divider {
   margin-right: 25px;
   margin-left: 25px;
 }
+/* fix space clicking from nav link to year*/
+#featurette14 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+
+#featurette13 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+#featurette12 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+#featurette11 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
 
 /*-------------------------------
 Modal
@@ -222,33 +227,36 @@ Modal
   padding-top: 70px;
 }
 
+.modal-title {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: center;
+}
+
 tr {
   padding: .25em;
+  text-align: center;
 }
 
 th, td {
   padding: .33em;
 }
 
-
 /*-------------------------------
 Footer
 --------------------------------------------- */
-/* Blockquote Footer *//
+/* BLOCKQUOTE Footer *//
 footer {
-	text-align: center;
+  text-align: center;
 }
 
-/* Page Footer */  
-/*footer#footer {
-  background-color: #2D3E30;
-  border-color: #2D3E30;
-  color: #E1DBD2;
-  text-align: center;
-  padding: 20px;
-}*/
-
-/* Page Footer */ 
+/* PAGE Footer */ 
 #footer {
   padding: 20px;
   background-color: #2D3E30;
@@ -266,6 +274,7 @@ Bottom Div to add space
 #bottom-page {
   background-color: #F5F3EF;
   height: 20px;
+  padding-top: 100px;
 }
 
 /*-------------------------------
@@ -314,10 +323,6 @@ Media Queary
   .navbar-default .navbar-brand {
     margin-top: 10px;
   }
-}
-
-
-@media (max-width: 610px) {
   p.navbar-text {
     clear: both;
     padding-top: 25px;
@@ -327,26 +332,30 @@ Media Queary
 
 @media (max-width: 480px) {
   .navbar-default .navbar-brand {
-    font-size: 36px;
+    font-size: 26px; /*changed w/font change*/
     margin-left: 2px;
   }
 }
 
-/*@media (max-width: 610px) {
-  button.navbar-toggle {
-    display: inline-block;
+/* toggle button on same line as brand*/
+@media (max-width: 320px) {  
+.navbar-toggle {
+    position: absolute;
   }
-}*/
+}
 
 /* --- Jumbotron ----*/
+@media (min-width: 800px) and (max-width: 960px) {
+  .jumbotron {
+    height: 450px;
+  }
+}
+
 @media (max-width: 768px) {
   .jumbotron {
-  background-image: url(../img/field.jpg);
-/*  opacity: 0.6;*/
   height: 450px;
   padding-top: 80px; 
-  padding-bottom: 80px; 
-  /*margin-bottom: 100px; */  
+  padding-bottom: 80px;  
   }
 }
 
@@ -357,18 +366,10 @@ Media Queary
   }
 }
 
-@media (max-width: 479px) {
-  .jumbotron p {
-    font-size: 16px;
-    font-weight: 600;
-  }
-}
-
 @media (max-width: 666px) {
   .jumbotron {
-  background-image: url(../img/field.jpg);
   height: 520px;
-  padding-top: 90px; 
+  padding-top: 60px;
   padding-bottom: 80px; 
   }
 }
@@ -379,10 +380,20 @@ Media Queary
   }
 }
 
-
+@media (max-width: 479px) {
+  .jumbotron p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
 
 /* Seasons 
 ---------------------------*/
+@media (min-width: 1024px) {
+  p {
+    padding-bottom: 10px;
+  }
+}
 
 @media (max-width: 768px) {
   div #seasons .container {
@@ -396,28 +407,26 @@ Media Queary
     }
   }
 
-/*@media (min-width: 992px) { 
-  #seasons .col-md-5 {
-  height: 20px;
+/* center on tablets */
+  @media (min-width: 600px) and (max-width: 990px) {
+    #seasons .col-md-5 {
+      text-align: center;
+    }
   }
-}*/
-/* need to change margins for sm screen */
-
-
-/*@media (max-width: 992px) {
-  hr {
-    color:;
+  @media (min-width: 600px) and (max-width: 990px) {
+    #seasons .season-img { 
+    display: inline;
+    }
   }
-}*/
+
+  @media (min-width: 320px) and (max-width: 950px) {
+    #seasons p {
+      padding-bottom: 10px;
+    }
+  }
 
 /* ----------------------------------
 Featurette */
-@media (min-width: 768px) {
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
@@ -427,13 +436,13 @@ Featurette */
 @media (min-width: 992px) { 
 .col-md-6 {
     width: 50%;
-    padding: 30px;    }
+    padding: 30px;    
+  }
 }
 
-@media (min-width: @screen-sm-min) {
-  /*#featurette {*/
-    #featurette .row .featurette {
-  background-color: #F5F3EF;
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
   }
 }
 
@@ -443,16 +452,50 @@ Featurette */
     padding-top: 10px;
   }
 }
+@media (min-width: 320px) and (max-width: 603px) {
+  .featurette-image {
+    padding-top: 20px;
+  }
+}
 
+@media (min-width: @screen-sm-min) {
+    #featurette .row .featurette {
+  background-color: #F5F3EF;
+  }
+}
 
+/* --------------------------------------------- 
+   modal table 
+--------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .modal-dialog {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .modal-body {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal-body {
+    font-size: 8px;
+  }
+}
+
+/* --------------------------------------------- 
+  No baseball animate on mobile
+--------------------------------------------- */
+
+@media (max-width: 1024px) {
+  #baseball {
+    display: none;
+  }
+}
 
 /* --------------------------------------------- */
 
 
-
-
-
-
-
-}
 
