@@ -61,6 +61,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav flot-nav">
                 <li><a href="#seasons">Winners</a></li>
+                <li><a href="#featurette15">2015</a></li>
                 <li><a href="#featurette14">2014</a></li>
                 <li><a href="#featurette13">2013</a></li>
                 <li><a href="#featurette12">2012</a></li>
@@ -77,6 +78,116 @@
     <!-- end animated baseball -->
 
       <!-- Adding Modal at top to avoid conflicts -->
+      <!-- 2015 Modal -->
+      <div class="modal fade" id="modal15">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                  <h4 class="modal-title">2015 Scores</h4>
+            </div> <!-- End modal-header -->
+            <div class="modal-body">
+                <!-- Modal - 2014 Scores Table -->
+              <table class="table-hover table-responsive">
+                <tr>
+                  <th id="rank" scope="col">Rank</th>
+                  <th id="team"scope="col">Team</th>
+                  <th id="batting"scope="col">Batting</th>
+                  <th id="pitching"scope="col">Pitching</th>
+                  <th id="rank"scope="col">Total</th>
+                  <th id="rank"scope="col">Behind</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <th scope="row">Pit Bulls</th>
+                  <td>43.0</td>
+                  <td>28.0</td>
+                  <td>71.0</td>
+                  <td>0.0</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <th scope="row">WilponsPlsSell</th>
+                  <td>44.0</td>
+                  <td>25.0</td>
+                  <td>69.0</td>
+                  <td>2.0</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <th scope="row">Syosset Psychosis</th>
+                  <td>29.0</td>
+                  <td>39.0</td>
+                  <td>68.0</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <th scope="row">Stanton and Deliver</th>
+                  <td>30.0</td>
+                  <td>35.0</td>
+                  <td>65.0</td>
+                  <td>6.0</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <th scope="row">SomeCryinginBaseball</th>
+                  <td>13.5</td>
+                  <td>40.0</td>
+                  <td>53.5</td>
+                  <td>17.5</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <th scope="row">Juicy</th>
+                  <td>33.0</td>
+                  <td>19.0</td>
+                  <td>52.0</td>
+                  <td>19.0</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <th scope="row">Northside</th>
+                  <td>29.0</td>
+                  <td>21.0</td>
+                  <td>50.0</td>
+                  <td>21.0</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <th scope="row">Bulldogs</th>
+                  <td>19.5</td>
+                  <td>30.0</td>
+                  <td>49.5</td>
+                  <td>21.5</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <th scope="row">Rising from the Ashes</th>
+                  <td>24.0</td>
+                  <td>23.0</td>
+                  <td>47.0</td>
+                  <td>24.0</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <th scope="row">Hechavarria...I Didn't Even Know Her</th>
+                  <td>10.0</td>
+                  <td>15.0</td>
+                  <td>25.0</td>
+                  <td>46.0</td>
+                </tr>
+              </table>  <!-- End 2015 Scores Table -->  
+            </div> <!-- End Modal Body -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> <!-- End Modal Footer -->
+          </div>  <!-- End Modal Content -->
+        </div> <!-- End Modal Dialog --> 
+      </div> <!-- End Modal Fade --> 
+        <!-- END MODAL15 -->
+
+      <!-- 2014 Modal -->
       <div class="modal fade" id="modal14">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -582,17 +693,32 @@
     <div id="seasons">
       <div class="container">
         <div class="row">
+          <!-- 2015 Season -->
           <div class="col-md-5">
+            <img src="img/catcher.png" alt="..." class="img-rounded img-responsive season-img" height="300" width="300">
+            <h2>2015 Season</h2>
+            <p>We've never had a crazy finish as we experienced in 2015. The last four weeks of the season saw daily lead changes. It came down to the wire but in the end we had a back-to-back champion. </p>
+            <p><button class="btn btn-default winner-btn" type="submit">View Winner &raquo;</button><span class="winner">Winner: Pit Bulls</span></p>
+          </div> <!-- col md 5 -->
+
+          <!-- only show hr on small screens -->
+          <hr class="hidden-md hidden-lg">
+
+          <!-- 2014 Season -->
+          <div class="col-md-5 col-md-offset-2">
             <img src="img/oops.png" alt="..." class="img-rounded img-responsive season-img" height="300" width="300">
             <h2>2014 Season</h2>
             <p>This wasn't even close. This first place team won convincingly, leading in both pitching and hitting categories. The 2nd place team was 18 points behind. This manager probably was yawning down the stretch. Remember which team won? </p>
             <p><button class="btn btn-default winner-btn" type="submit">View Winner &raquo;</button><span class="winner">Winner: Pit Bulls</span></p>
           </div> <!-- col md 5 -->
 
+          <div class="clearfix visible-md-5"></div>
+
           <!-- only show hr on small screens -->
           <hr class="hidden-md hidden-lg">
-         
-          <div class="col-md-5 col-md-offset-2">
+
+          <!-- 2013 Season -->
+          <div class="col-md-5">
             <img src="img/upandaway.jpg" alt="..." class="img-rounded img-responsive season-img" height="300" width="300">
             <h2>2013 Season</h2>
             <p>2013 was a close finish with a mere 4.5 points separating first and second place. The first place team dominating in pitching but the 2nd place team was dominant in hitting. There was more than a double differential between the first and last place teams. The winner in 2013 was...</p>
@@ -601,7 +727,8 @@
 
            <hr class="hidden-md hidden-lg">
 
-          <div class="col-md-5">
+          <!-- 2012 Season -->
+          <div class="col-md-5 col-md-offset-2">
             <img src="img/fight.jpg" alt="..." class="img-rounded img-responsive season-img" height="300" width="300">
             <h2>2012 Season</h2>
             <p>Well, well, well, a first. The 2012 season ended in a Championship tie. These two tied teams finished with 90 points, 11.5 points ahead of the third, or is it second, place team? Hard enough remember which team won, let alone the two teams took the 2012 crown.</p>
@@ -610,7 +737,8 @@
 
           <hr class="hidden-md hidden-lg">
 
-          <div class="col-md-5 col-md-offset-2">
+          <!-- 2011 Season -->
+          <div class="col-md-5">
             <img src="img/face.png" alt="..." class="img-rounded img-responsive season-img" height="300" width="300">
             <h2>2011 Season</h2>
             <p>This team was not kidding around in 2011. They were alone in the 90+ points total, waving to the second place team 11 points behind. Although maybe this manager was kicking himself for being so close to 100 points yet so far. 2011 was the first time this manager steered his team to the championship.</p>
@@ -625,8 +753,36 @@
 
       <hr class="featurette-divider">
       <!-- adding extra div for space navbar toggle open -->
-      <div id="featurette14" class="row featurette">
+
+      <!-- featurette '15 -->
+      <div id="featurette15" class="row featurette">
         <div class="col-md-7 left">
+          <h2 class="featurette-heading">The lead down the stretch changed more<span class="text-muted"> than Steinbrenner changed managers</span></h2>
+          <p class="lead">The last month of the 2015 season saw a constant 4-team battle for first and daily lead changes. While the positions kept changing the difference between first and fourth place remained mere points. If the season lasted one more day would the outcome have been the same or would there have been yet another change?</p>
+
+          <blockquote>
+            <p>This is crazy. I feel like my team is limping across the finish line</p>
+              <footer>Stanton and Deliver Manager</footer>
+          </blockquote>
+
+          <blockquote>
+            <p>My team didn't abandon me, I abondoned them early in the season. I guess I had better things to do</p>
+              <footer>Hechavarria Manager</footer>
+          </blockquote>
+          <!-- button -->
+          <button type="button" data-year="15" class="btn btn-default scores-btn15 scores-btn">2015 Scores</button> <!-- end modal button -->         
+          <!-- Modal15-->        
+        </div> <!-- End col-md-7 left -->
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="img/outfieldmiss.jpg" alt="Error in Center" height="400" width="400">
+        </div> <!-- col-md-5 -->      
+      </div> <!-- id featurette15 row featurette -->
+
+      <hr class="featurette-divider">
+
+      <!-- featurette '14 -->
+      <div id="featurette14" class="row featurette">
+        <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Having a potent, balanced team <span class="text-muted">is what led us to victory</span></h2>
           <p class="lead">2014 was all about one team looking down at the others for a good part of the season. While the champions had nothing to worry about, there was a fierce battle, that came down to the wire, between the 2nd-4th place teams.</p>
 
@@ -638,15 +794,16 @@
           <button type="button" data-year="14" class="btn btn-default scores-btn14 scores-btn">2014 Scores</button> <!-- end modal button -->         
           <!-- Modal14-->        
         </div> <!-- End col-md-7 left -->
-        <div class="col-md-5">
+        <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="img/outatsecond.png" alt="Out At Second" height="400" width="400">
         </div> <!-- col-md-5 -->      
       </div> <!-- id featurette14 row featurette -->
 
       <hr class="featurette-divider">
 
+      <!-- featurette '13 -->
       <div id="featurette13" class="row featurette">
-        <div class="col-md-7 col-md-push-5">
+        <div class="col-md-7 left">
           <h2 class="featurette-heading">It was a battle for the top <span class="text-muted">"butt" pitching prevailed over hitting.</span></h2>
           <p class="lead">2013 saw many battles ~ between 1st &amp; 2nd, 3rd &amp; 4th and other battles within the league. When all was said and done, the slight pitching advantage lead to the victory.</p>
             <blockquote>
@@ -657,7 +814,7 @@
           <button type="button" data-year="13" class="btn btn-default scores-btn13 scores-btn">2013 Scores</button>
           <!-- end modal button -->         
         </div> <!-- col-md-7 -->
-        <div class="col-md-5 col-md-pull-7">          
+        <div class="col-md-5">          
           <img class="featurette-image img-responsive center-block" src="img/buttbaseball.png" alt="Generic placeholder image" height="400" width="400">
         </div> <!-- col-md-5  -->      
       </div> <!-- featurette13 row featurette -->
@@ -665,8 +822,9 @@
 
       <hr class="featurette-divider">
 
+      <!-- featurette '12 -->
       <div id="featurette12" class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">It was a battle to the finsh line <span class="text-muted">And it was a tie for first place....what?!.</span></h2>
           <p class="lead">2012 was a nail-biter. It was the first-ever &#34;Long Season for the Mets&#34; Championship tie. The 3rd place team wasn't even close, finishing 11.5 points behind. &quot;1&quot; sure wasn't a lonely number, it was the point difference between 3rd &amp; 4th place, 5th &amp; 6th place and 9th &amp; 10th place.</p>
           <blockquote>
@@ -677,15 +835,16 @@
           <button type="button" data-year="12" class="btn btn-default scores-btn12 scores-btn">2012 Scores</button>
           <!-- end modal button -->                  
         </div> <!-- col-md-7 -->
-        <div class="col-md-5">
+        <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="img/doh.jpg" alt="Blooper Image" height="400" width="400">
         </div> <!-- col-md-5 -->
       </div> <!-- featurette12 row featurette -->
 
       <hr class="featurette-divider">
 
+      <!-- featurette '11 -->
       <div id="featurette11" class="row featurette">
-        <div class="col-md-7 col-md-push-5">
+        <div class="col-md-7 left">
           <h2 class="featurette-heading">While two teams were duking it out for 2nd &amp; 3rd, <span class="text-muted">this team was cruising in first</span></h2>
           <p class="lead">In 2011 there were multiple close races but when it came to the championship it wasn't even close. The real battles were between 2nd &amp; 3rd place, which were separated by 0.5 points and the 5th &minus; 7th place teams, where 1.5 points was the total difference. In another league first, the last place team ranked last in every batting category. No easy task.</p>
           <blockquote>
@@ -696,21 +855,21 @@
           <button type="button" data-year="11" class="btn btn-default scores-btn11 scores-btn">2011 Scores</button>
           <!-- end modal button -->             
         </div> <!-- col-md-7 -->
-        <div class="col-md-5 col-md-pull-7">          
+        <div class="col-md-5">          
           <img class="featurette-image img-responsive center-block" src="img/facehit.png" alt="Face Punch" height="400" width="400">
         </div> <!-- col-md-5 -->
       </div> <!-- featurette11 row featurette -->
 
-    <!-- 2015 featurette -->
+    <!-- 2016 featurette -->
       <hr class="featurette-divider">
 
-      <div id="featurette15" class="row featurette">
-        <div class="col-md-7 left">
-          <h2 class="featurette-heading">2015 is shaping up to be a close race,<span class="text-muted"> battles brewing for the top spots</span></h2>
-          <p class="lead">5 points separate 1st &minus; 4th place. The lead has been changing daily and this might just be the lowest total points for 1st place. It's looking like the champtionship is going to come down to the wire. With 30+ games remaining, anything can happen. Who will take home the 2015 crown?</p>
+      <div id="featurette16" class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">What will 2016 bring?<span class="text-muted"> Anything is possible.</span></h2>
+          <p class="lead">There have only been 3 different managers to win in the last 5 years. Will Pitbulls three-peat? Will Stanton and Deliver (fma the good, the bad and the ugla) return to the winner's circle after winning 2 consecutive years. Will a new team take the top spot? Only time will tell....until next season.</p>
         </div> <!-- col-md-7 -->
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="img/outfieldmiss.jpg" alt="Error in Center" height="400" width="400">
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="img/knee.png" alt="Error in Center" height="400" width="400">
         </div> <!-- col-md-5 -->      
       </div> <!-- featurette15 row featurette-->      
     </div>  <!-- End featurettes -->
@@ -724,8 +883,6 @@
       <p>&copy; Leaguer Board / Long Season Mets 2015</p>
     </footer>
 
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -735,5 +892,6 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/easing.js"></script>
     <script src="js/script.js"></script>
+
   </body>
 </html>
