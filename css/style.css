@@ -171,6 +171,10 @@ hr.featurette-divider {
   border-top: 1px solid #E2E2E2 !important;
 }
 
+#sound-bites {
+  margin-bottom: 0;
+}
+
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */  
 }
@@ -219,6 +223,37 @@ hr.featurette-divider {
   margin-top: -125px; 
   padding-top: 125px; 
 }
+
+/*-------------------------------
+Season Start Countdown
+--------------------------------------------- */
+#countdown-clock {
+  padding-top: 60px;
+}
+
+#countdown-clock h2 {
+    font-size: 52px;
+}
+.countdown {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #5B7660;
+}
+
+#countdown-clock h3 {
+  color: #5B7660;
+}
+
+#count-text h4 {
+/*  color: #E1DBD2;*/
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #5B7660;
+
+}
+
+
 
 /*-------------------------------
 Modal
