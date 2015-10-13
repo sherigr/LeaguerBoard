@@ -31,12 +31,30 @@ $('.winner').hide();
 		})
 	});
 
+  
+// Countdown to Opening Day '16
+$(function(){
+    var openingDay = setInterval(function(){
+        openDayStart = new Date("April 3, 2016 20:00:00");
+      today = new Date();
+
+        seconds = Math.floor((openDayStart - (today))/1000);
+        minutes = Math.floor(seconds/60);
+        hours = Math.floor(minutes/60);
+        days = Math.floor(hours/24);
+        
+        hours = hours-(days*24);
+        minutes = minutes-(days*24*60)-(hours*60);
+        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+
+    $('#days').html(days);
+    $('#hours').html(hours);
+    $('#mins').html(minutes);
+    $('#secs').html(seconds);
+  }, 1000);
+});
+  
+
 
 });
-
-
-
-
-
-
 

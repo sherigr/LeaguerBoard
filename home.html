@@ -758,7 +758,9 @@
       <div id="featurette15" class="row featurette">
         <div class="col-md-7 left">
           <h2 class="featurette-heading">The lead down the stretch changed more<span class="text-muted"> than Steinbrenner changed managers</span></h2>
-          <p class="lead">The last month of the 2015 season saw a constant 4-team battle for first and daily lead changes. While the positions kept changing the difference between first and fourth place remained mere points. If the season lasted one more day would the outcome have been the same or would there have been yet another change?</p>
+          <p class="lead">The last month of the 2015 season saw a constant 4-team battle for first and daily lead changes. While the standings kept changing the difference between first and fourth place remained mere points. If the season lasted one more day would the outcome have been the same or would there have been yet another change?</p>
+
+          <p id="sound-bites" class="lead">They Said What???</p>
 
           <blockquote>
             <p>This is crazy. I feel like my team is limping across the finish line</p>
@@ -766,8 +768,18 @@
           </blockquote>
 
           <blockquote>
-            <p>My team didn't abandon me, I abondoned them early in the season. I guess I had better things to do</p>
-              <footer>Hechavarria Manager</footer>
+            <p>It's the little things...like moving from last to 8th place and gunning for 7th...</p>
+              <footer>Northside Manager</footer>
+          </blockquote>
+
+          <blockquote>
+            <p>If my team sucked any worse, they'd be The Yankees</p>
+              <footer>Rising from the Ashes Manager</footer>
+          </blockquote>
+
+          <blockquote>
+            <p>My team didn't abandon me, I abondoned them early in the season. I guess I was thinking about football</p>
+              <footer>Hechavarria Manager ~ overheard saying</footer>
           </blockquote>
           <!-- button -->
           <button type="button" data-year="15" class="btn btn-default scores-btn15 scores-btn">2015 Scores</button> <!-- end modal button -->         
@@ -870,7 +882,27 @@
         </div> <!-- col-md-7 -->
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="img/knee.png" alt="Error in Center" height="400" width="400">
-        </div> <!-- col-md-5 -->      
+        </div> <!-- col-md-5 -->
+
+        <!-- Countdown to 2016 Season -->
+     <!--    <div class="col-md-12 col-sm-12">
+          <h3 class="countdown" class="text-center">Only<span id="days" class="countdown"> days</span><span id="hours" class="countdown"> hours</span><span id="mins"class="countdown"> minutes</span><span id="secs" class="countdown"> seconds</span> until Opening Night 2016</h3> -->
+         <div class="col-md-12 col-sm-12">
+          <div id="countdown-clock">
+            <h3 class="text-center">Counting Down To Opening Night:</h3>
+            <h2 class="text-center">
+              <span id="days" class="countdown"></span><span id="hours" class="countdown"></span><span id="mins" class="countdown"></span><span id="secs" class="countdown"></span>
+            </h2>
+          </div> <!-- countdown-clock -->
+
+          <div class="countdown-text">
+            <h4 class="countdown" class="text-center"><span class="countdown-text"> days</span><span class="countdown-text"> hours</span><span class="countdown-text"> minutes</span><span class="countdown-text"> seconds</span>
+            </h4>
+          </div>
+
+
+        </div> <!-- col-md-12 -->
+        <!-- End Countdowwn -->        
       </div> <!-- featurette15 row featurette-->      
     </div>  <!-- End featurettes -->
     <!-- /END THE FEATURETTES -->
@@ -886,10 +918,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+    <!-- <script src="js/jquery.prettyPhoto.js"></script> -->
     <script src="js/easing.js"></script>
     <script src="js/script.js"></script>
 
