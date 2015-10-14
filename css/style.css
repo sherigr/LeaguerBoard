@@ -231,29 +231,37 @@ Season Start Countdown
   padding-top: 60px;
 }
 
-#countdown-clock h2 {
-    font-size: 52px;
-}
 .countdown {
   margin-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
   color: #5B7660;
+  text-align: center;
+  font-size: 46px;
+}
+
+.countdown-text {
+  text-align: center;
+  color: #5B7660;
+  font-size: 22px;
 }
 
 #countdown-clock h3 {
   color: #5B7660;
 }
 
-#count-text h4 {
-/*  color: #E1DBD2;*/
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #5B7660;
+
+/* countdown clock */ 
+/*.countdown-text {
+  text-align: center
+}*/
+.countdown-text .countdown {
+  display: inline-block;
+}
+.countdown-text .countdown-container {
+  float: left;
 
 }
-
-
 
 /*-------------------------------
 Modal
@@ -481,6 +489,24 @@ Featurette */
   }
 }
 
+@media (max-width: 768px) {
+  .countdown {
+    font-size: 28px;
+  }
+  .countdown-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    font-size: 18px;
+  }
+  .countdown-text {
+    font-size: 14px;
+  }
+}
+
 /* giving space btw button and col */
 @media (min-width: 320px) and (max-width: 730px) {
   .col-md-5 {
@@ -496,6 +522,28 @@ Featurette */
 @media (min-width: @screen-sm-min) {
     #featurette .row .featurette {
   background-color: #F5F3EF;
+  }
+}
+
+/* --------------------------------------------- 
+   Countdown Clock
+--------------------------------------------*/
+@media (max-width: 600px) {
+  .countdown {
+    font-size: 20px;
+  }
+  .countdown-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 599px) {
+  .countdown {
+    font-size: 14px;
+/*    margin-left: -10px;*/
+  }
+  .countdown-text {
+    font-size: 14px;
   }
 }
 
@@ -530,7 +578,6 @@ Featurette */
   }
 }
 
-/* --------------------------------------------- */
 
 
 
