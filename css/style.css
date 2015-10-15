@@ -154,6 +154,12 @@ color: #8EB200;
 /*-------------------------------
   Seasons Section
 --------------------------------------------- */
+/* space so link opens section correctly */
+#seasons {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+
 .winner {
   color: #566459;
   font-size: 20px;
@@ -191,7 +197,6 @@ hr.featurette-divider {
   letter-spacing: -1px;
 }
 
-/* try to reword so fits w/featurette, no carousel */
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, 
 .img-responsive, .thumbnail a>img, .thumbnail>img {
   border-radius: 10px;
@@ -206,6 +211,11 @@ hr.featurette-divider {
   margin-left: 25px;
 }
 /* fix space clicking from nav link to year*/
+#featurette15 {
+  margin-top: -125px; 
+  padding-top: 125px; 
+}
+
 #featurette14 {
   margin-top: -125px; 
   padding-top: 125px; 
@@ -250,17 +260,12 @@ Season Start Countdown
   color: #5B7660;
 }
 
-
-/* countdown clock */ 
-/*.countdown-text {
-  text-align: center
-}*/
 .countdown-text .countdown {
   display: inline-block;
 }
+
 .countdown-text .countdown-container {
   float: left;
-
 }
 
 /*-------------------------------
@@ -387,7 +392,9 @@ Media Queary
   }
 }
 
-/* --- Jumbotron ----*/
+/* -------------------------------
+ Jumbotron 
+ ---------------------------------------*/
 @media (min-width: 800px) and (max-width: 960px) {
   .jumbotron {
     height: 450px;
@@ -430,7 +437,8 @@ Media Queary
   }
 }
 
-/* Seasons 
+/* ---------------------------
+Seasons 
 ---------------------------*/
 @media (min-width: 1024px) {
   p {
@@ -438,17 +446,18 @@ Media Queary
   }
 }
 
-@media (max-width: 768px) {
-  div #seasons .container {
-    margin-top: 35px !important;
-  }
-}
 @media (min-width: 992px) { 
   .col-md-5 {
     width: 41.66666667%;
     margin-bottom: 25px;
     }
   }
+
+@media (max-width: 768px) {
+  div #seasons .container {
+    margin-top: 35px !important;
+  }
+}
 
 /* center on tablets */
   @media (min-width: 600px) and (max-width: 990px) {
@@ -469,7 +478,8 @@ Media Queary
   }
 
 /* ----------------------------------
-Featurette */
+Featurette 
+----------------------------------*/
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
@@ -528,6 +538,18 @@ Featurette */
 /* --------------------------------------------- 
    Countdown Clock
 --------------------------------------------*/
+@media (min-width: 500px) {
+  .small-text {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .countdown-text .word {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .countdown {
     font-size: 20px;
@@ -539,11 +561,31 @@ Featurette */
 
 @media (max-width: 599px) {
   .countdown {
-    font-size: 14px;
-/*    margin-left: -10px;*/
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .countdown-text {
-    font-size: 14px;
+  .clock {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 384px) {
+  .countdown {
+    padding-left: 20px;
+    padding-right: 10px
+  }
+  .clock {
+    margin-left: -20px;
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .countdown {
+    margin-left: -10px;
+  }
+  #countdown-clock h3 {
+    font-size: 18px;
   }
 }
 
