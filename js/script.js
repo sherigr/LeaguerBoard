@@ -47,12 +47,21 @@ $('.winner').hide();
           minutes = minutes-(days*24*60)-(hours*60);
           seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
 
+          if(openDayStart - today <= 0) {
+            openingDay = clearInterval(openingDay);
+            days = 0;
+            minutes = 0;
+            hours = 0;
+            seconds = 0;
+          }
+
       $('#days').html(days);
       $('#hours').html(hours);
       $('#mins').html(minutes);
       $('#secs').html(seconds);
     }, 1000);
   });
+
 
 
 });
