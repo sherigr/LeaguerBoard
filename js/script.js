@@ -62,6 +62,12 @@ $('.winner').hide();
     }, 1000);
   });
 
+// Footer
+var today = new Date();
+var year = today.getFullYear();
+
+$('#footer').html('<p>Leaguer Board &sol; Long Season Mets &copy' + year + '</p>');
+
 
 
 });
