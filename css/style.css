@@ -220,9 +220,9 @@ hr.featurette-divider {
 /*-------------------------------
 Season Start Countdown
 --------------------------------------------- */
-#countdown-clock {
+/*#countdown-clock {
   padding-top: 60px;
-}
+}*/
 
 .countdown {
   margin-top: 20px;
@@ -239,8 +239,12 @@ Season Start Countdown
   font-size: 22px;
 }
 
-#countdown-clock h3 {
+#countdown-clock h3, p {
   color: #5B7660;
+}
+
+#countdown-clock p {
+  font-style: italic;
 }
 
 .countdown-text .countdown {

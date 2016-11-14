@@ -35,7 +35,7 @@ $('.winner').hide();
   // Countdown Clock to Opening Day '16
   $(function(){
       var openingDay = setInterval(function(){
-        openDayStart = new Date("April 3, 2016 20:00:00");
+        openDayStart = new Date("April 2, 2017 16:00:00");
         today = new Date();
 
           seconds = Math.floor((openDayStart - (today))/1000);
