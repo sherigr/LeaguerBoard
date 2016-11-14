@@ -32,8 +32,7 @@ $('.winner').hide();
 	});
 
   
-  // Countdown Clock to Opening Day '16
-  $(function(){
+  // Countdown Clock to Opening Day 
       var openingDay = setInterval(function(){
         openDayStart = new Date("April 2, 2017 16:00:00");
         today = new Date();
@@ -60,14 +59,12 @@ $('.winner').hide();
       $('#mins').html(minutes);
       $('#secs').html(seconds);
     }, 1000);
-  });
 
 // Footer
 var today = new Date();
 var year = today.getFullYear();
 
 $('#footer').html('<p>Leaguer Board &sol; Long Season Mets &copy' + year + '</p>');
-
 
 
 });
