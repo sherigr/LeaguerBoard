@@ -211,12 +211,13 @@ hr.featurette-divider {
   margin-left: 25px;
 }
 /* fix space clicking from nav link to year*/
-#featurette15 {
+#featurette16, #featurette15, #featurette14, #featurette13, #featurette12,
+  #featurette11 {
   margin-top: -125px; 
   padding-top: 125px; 
 }
 
-#featurette14 {
+/*#featurette14 {
   margin-top: -125px; 
   padding-top: 125px; 
 }
@@ -232,7 +233,7 @@ hr.featurette-divider {
 #featurette11 {
   margin-top: -125px; 
   padding-top: 125px; 
-}
+}*/
 
 /*-------------------------------
 Season Start Countdown
